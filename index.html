@@ -16,8 +16,8 @@
         <nav>
             <ul>
                 <li><a href="#home">Início</a></li>
-                <li><a href="#history">História</a></li>
-                <li><a href="#schedule">Programação</a></li>
+                <li><a href="#conexao">Conexão Campo-Cidade</a></li>
+                <li><a href="#impacto">Impacto</a></li>
                 <li><a href="#gallery">Galeria</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
@@ -25,50 +25,52 @@
     </header>
 
     <main id="home">
+        <!-- Seção de Introdução -->
         <section class="intro">
             <h1>Bem-vindo ao Agrinho 2025!</h1>
-            <p>Celebrando a Conexão entre o Campo e a Cidade. Vamos juntos em um evento que integra o rural e o urbano.</p>
+            <p>Um evento que celebra a conexão entre o campo e a cidade, promovendo o compartilhamento de saberes e práticas.</p>
         </section>
 
-        <section id="history">
-            <h2>História do Agrinho</h2>
-            <p>O Agrinho é um evento que busca estreitar a relação entre a comunidade rural e urbana, promovendo aprendizado e experiências no campo.</p>
-        </section>
-
-        <section id="schedule">
-            <h2>Programação</h2>
-            <ul>
-                <li>Palestra sobre Sustentabilidade no Campo - 10:00</li>
-                <li>Workshop de Agricultura Urbana - 12:00</li>
-                <li>Atividades Interativas para Crianças - 14:00</li>
-            </ul>
-        </section>
-
-        <section id="gallery">
-            <h2>Galeria de Imagens</h2>
-            <div class="gallery-grid">
-                <img src="images/agrinho1.jpg" alt="Imagem 1">
-                <img src="images/agrinho2.jpg" alt="Imagem 2">
-                <img src="images/agrinho3.jpg" alt="Imagem 3">
+        <!-- Seção de Conexão -->
+        <section id="conexao">
+            <h2>A Conexão Campo-Cidade</h2>
+            <div class="conexao-description">
+                <p>A relação entre o campo e a cidade é vital para o desenvolvimento sustentável e para a troca de conhecimentos e experiências. O **Agrinho 2025** traz essa conexão para o centro das atenções, incentivando a integração entre as culturas rurais e urbanas.</p>
+                <p>Essa troca promove o acesso à tecnologia agrícola, enquanto a cidade contribui com inovações urbanas que podem ser aplicadas ao campo.</p>
+            </div>
+            <div class="conexao-interativo">
+                <div class="campo" onclick="revelarCampoCidade('campo')">
+                    <img src="images/campo.jpg" alt="Campo">
+                    <div class="campo-texto">Campo</div>
+                </div>
+                <div class="cidade" onclick="revelarCampoCidade('cidade')">
+                    <img src="images/cidade.jpg" alt="Cidade">
+                    <div class="cidade-texto">Cidade</div>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Inscreva-se para o Evento</h2>
-            <form id="registration-form">
-                <label for="name">Nome Completo</label>
-                <input type="text" id="name" required>
+        <!-- Seção de Impacto -->
+        <section id="impacto">
+            <h2>Impacto da Conexão</h2>
+            <div class="impacto-content">
+                <p>O evento Agrinho 2025 busca promover a troca de conhecimentos entre esses dois mundos. Ao compartilhar inovações no campo e soluções urbanas, buscamos um futuro mais integrado e sustentável para todos.</p>
+            </div>
+        </section>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" required>
-
-                <button type="submit">Inscrever</button>
-            </form>
+        <!-- Galeria de Imagens -->
+        <section id="gallery">
+            <h2>Galeria de Fotos</h2>
+            <div class="gallery-grid">
+                <img src="images/agrinho1.jpg" alt="Imagem do campo">
+                <img src="images/agrinho2.jpg" alt="Imagem da cidade">
+                <img src="images/agrinho3.jpg" alt="Imagem do evento">
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Agrinho. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Agrinho - Todos os direitos reservados.</p>
     </footer>
 
     <script src="scripts/app.js"></script>
