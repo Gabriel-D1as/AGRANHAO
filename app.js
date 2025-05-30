@@ -1,13 +1,10 @@
-document.getElementById('registration-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evitar o envio real do formulário
+function revelarCampoCidade(local) {
+    const campoTexto = document.querySelector('.campo-texto');
+    const cidadeTexto = document.querySelector('.cidade-texto');
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-
-    if (name && email) {
-        alert(`Obrigado, ${name}! Sua inscrição foi recebida.`);
-        document.getElementById('registration-form').reset();
+    if(local === 'campo') {
+        campoTexto.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        cidadeTexto.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
     } else {
-        alert('Por favor, preencha todos os campos.');
-    }
-});
+        cidadeTexto.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        campoTexto.style.backgroundColor = 'rgba(0, 0, 0, 0.5
